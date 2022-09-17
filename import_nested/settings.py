@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ym&@q_58zvx%oorb8hjmcg7$_)$=3o^k-6l0qi38o&)84l$7+r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ '*' ]
 
 
 # Application definition
@@ -122,3 +122,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = [ 'https://*.paiza-user-free.cloud:8000/' ]
