@@ -13,7 +13,7 @@ class Asset(models.Model):
             return str(self.parent) + ' > ' + self.name
 
 class Site(models.Model):
-    site_no = models.IntegerField("Site Number")
+    site_no = models.CharField("Site Number", max_length=255)
     name = models.CharField("Site name", max_length=100)
 
     def __str__(self):
