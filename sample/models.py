@@ -15,11 +15,6 @@ class Asset(models.Model):
 class Site(models.Model):
     site_no = models.IntegerField("Site Number")
     name = models.CharField("Site name", max_length=100)
-    latitude = models.FloatField("Latitude")
-    longitude = models.FloatField("Longitude")
-    state = models.CharField("State", max_length=50)
-    postcode = models.CharField("Postcode", max_length=20)
-    address = models.CharField("Address", max_length=300)
 
     def __str__(self):
         return self.name
